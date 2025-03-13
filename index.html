@@ -74,6 +74,15 @@
     </style>
 </head>
 <body>
+    <script>
+        var password = "mysecret"; // Change this to your password
+        var userInput = prompt("Enter password to access this page:");
+        if (userInput !== password) {
+          alert("Incorrect password! Redirecting...");
+          window.location.href = "https://google.com"; // Redirect if wrong
+        }
+      </script>
+      
     <div class="message-box">Tap on 10 balloons to reveal the surprise! 🎈</div>
     <div class="game-container" id="gameContainer"></div>
     <div class="hidden" id="birthdayPage">
